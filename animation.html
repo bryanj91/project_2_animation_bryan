@@ -12,9 +12,10 @@
   <animate attributeName="opacity" from="1" to="0" dur="8s" repeatCount="indefinite"/>
 </rect>
 <circle cx="143" cy="93" r="35" fill="lightgray" fill-opacity="0.8">
-  <animate id="move1" attributeName="cy" from="93" to="400" dur="3s"begin="click"/>
-  <animate id="move2" attributeName="cx" from="143" to="" dur="3s" begin="move1.end"/>
-
+  <animate id="move1" attributeName="cy" from="93" to="400" dur="3s"begin="click" fill="freeze"/>
+  <animate id="move2" attributeName="cx" from="143" to="290" dur="3s" begin="move1.end" fill="freeze"/>
+  <animate id="move3" attributeName="cy" from="400" to="93" dur="3" begin="move2.end" fill="freeze"/>
+  <animate id="move4" attributeName="cx" from="" to="" dur="" begin="move3.end" fill="freeze"/>
 </circle>
   <line x1="220" y1="50" x2="220" y2="350" stroke="black" stroke-width="8"/>
   <line x1="350" y1="550" x2="350" y2="350" stroke="black" stroke-width="8"/>
