@@ -6,16 +6,23 @@
   </head>
   <body>
     <!-- page content -->
+ <h1>Obstical Jumper</h1>
+<p></p>
+
     <svg width="1000" height="600">
   <rect x="100" y="50" width="800" height="500" fill="white"/>
   <rect x="100" y="50" rx="10" ry="20" width="800" height="500" stroke="black" fill="transparent" stroke-width="10">
   <animate attributeName="opacity" from="1" to="0" dur="8s" repeatCount="indefinite"/>
 </rect>
 <circle cx="143" cy="93" r="35" fill="lightgray" fill-opacity="0.8">
-  <animate id="move1" attributeName="cy" from="93" to="400" dur="3s"begin="click" fill="freeze"/>
-  <animate id="move2" attributeName="cx" from="143" to="290" dur="3s" begin="move1.end" fill="freeze"/>
-  <animate id="move3" attributeName="cy" from="400" to="93" dur="3" begin="move2.end" fill="freeze"/>
-  <animate id="move4" attributeName="cx" from="" to="" dur="" begin="move3.end" fill="freeze"/>
+  <animate id="move1" attributeName="cy" from="93" to="400" dur="1s"begin="click" fill="freeze"/>
+  <animate id="move2" attributeName="cx" from="143" to="290" dur="1s" begin="move1.end" fill="freeze"/>
+  <animate id="move3" attributeName="cy" from="400" to="93" dur="1s" begin="move2.end" fill="freeze"/>
+  <animate id="move4" attributeName="cx" from="290" to="410" dur="1s" begin="move3.end" fill="freeze"/>
+  <animate id="move5" attributeName="cy" from="93" to="400" dur="1s" begin="move4.end" fill="freeze"/>
+  <animate id="move6" attributeName="cx" from="410" to="550" dur="1s" begin="move5.end" fill="freeze"/>
+  <animate id="move7" attributeName="cy" from="400" to="250" dur="1s" begin="move6.end" fill="freeze"/>
+  <animate id="move8" attributeName="cx" from="550" to="800" dur="1s" begin="move7.end" fill="freeze"/>
 </circle>
   <line x1="220" y1="50" x2="220" y2="350" stroke="black" stroke-width="8"/>
   <line x1="350" y1="550" x2="350" y2="350" stroke="black" stroke-width="8"/>
@@ -26,6 +33,5 @@
 </ellipse>
 </svg>
 
- <h1></h1>
   </body>
 </html>
