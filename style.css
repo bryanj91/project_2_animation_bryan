@@ -1,9 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
+
 body {
   background: firebrick;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
-
 h1 {
   font-family:'Amatic SC', cursive;
 }
+
+ p{
+font-family:'Amatic SC', cursive;
+
+ }
